@@ -19,7 +19,7 @@ async def most_interesting_article():
     soup = BeautifulSoup(reqs.text, 'html.parser')
 
     # Finding the articles by their HTML tag and class name
-    articles = soup.find_all('a', class_='post-block__title__link', limit=3)
+    articles = soup.find_all('a', class_='post-block__title__link', limit=2)
 
     # Dictionary to store article information and sentiment
     article_info = {}
